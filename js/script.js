@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", (e) => {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      alert(errorMessage.message);
+      alert("Invalid Credentials");
       console.log(errorCode, errorMessage);
     });
 });
